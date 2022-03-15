@@ -10,18 +10,24 @@
     <link rel="stylesheet" href="../style/Style.css">
 </head>
 <body>
+    <div class="globalWrap">
     <header class="header">
         <div class="headerWrap">
             <div class="logo"></div>
-            <div class="empty"></div>
             <nav class="navigation">
                 <ul class="navigation__ul">
-                    <li class="navigation__presets">Presets</li>
-                    <li class="navigation__prints">Prints</li>
-                    <li class="navigation__store">Store</li>
-                    <li class="navigation__about">About</li>
-                    <li class="navigation__contact">Contact</li>
-                    <li class="navigation__cart">Cart</li>
+                    <li class="navigation__presets"><a href="#">Presets</a></li>
+                    <li class="navigation__prints"><a href="#">Prints</a></li>
+                    <li class="navigation__store"><a href="#">Store</a></li>
+                    <li class="navigation__about"><a href="#">About</a></li>
+                    <li class="navigation__contact"><a href="#">Contact</a></li>
+                    <li class="navigation__cart">
+                        <a href="#" class="cart__href">Cart</a>
+                        <div class="navigation__cart_count">
+                            <span class="cart__count_span">0</span>
+                        </div>
+                        
+                    </li>
                 </ul>
             </nav>
         </div>   
@@ -29,11 +35,9 @@
     <main class="main">
         <section class="intro">
             <div class="introLeft">
-                <div class="introLeft__div"></div>
-                <h1 class="introLeft__h1"></h1>
-                <p class="introLeft__p"></p>
-                <a href="" class="introLeft__a"></a>
-                <div class="introLeft__div"></div>
+                <h1 class="introLeft__h1">Hi, I'm James Mirro & I'm a photographer.</h1>
+                <p class="introLeft__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                <div class="introLeft__a"><a href="#">Read more</a></div>
             </div>
             <div class="introRight">
                 <div class="introRight__img"></div>
@@ -98,5 +102,6 @@
         </div>
 
     </footer>
+    </div>
 </body>
 </html>

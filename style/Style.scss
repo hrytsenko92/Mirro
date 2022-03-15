@@ -17,10 +17,15 @@ body {
 div {
     border: 1px solid cadetblue;
 }
-
+.globalWrap {
+    display: grid;
+    grid-template-columns: 1fr 83.3% 1fr;
+    grid-template-rows: auto auto auto;
+}
 .header {
+    grid-column: 2/3;
+    grid-row: 1/2;
     .headerWrap{
-        width: 83.3%;
         margin: 0 auto;
         display: grid;
         grid-template-rows: 4.3rem;
@@ -28,6 +33,7 @@ div {
         justify-content: space-around;
         align-content: center;
         align-items: center;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
         .logo {
             grid-row: 1/2;
             grid-column: 1/2;
@@ -35,10 +41,6 @@ div {
             height: 1.8rem;
             background-image: url('../img/Logo_header.svg');
             background-size: contain;
-        }
-        .empty {
-            grid-row: 1/2;
-            grid-column: 2/3;
         }
         .navigation {
             grid-row: 1/2;
@@ -48,6 +50,16 @@ div {
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1.4fr;
                 grid-template-rows: 1fr;
                 justify-content: space-around;
+                align-items: center;
+                font-size: 1rem;
+                a:link, a:active, a:focus, a:visited {
+                    text-decoration: none;
+                    color:#3A5F56;
+                }
+                a:hover {
+                    text-decoration: underline;
+                    color:#3A5F56;
+                }
                 .navigation__presets {
                     grid-column: 1/2;
                     grid-row: 1/2;
@@ -72,8 +84,84 @@ div {
                     grid-column: 6/7;
                     grid-row: 1/2;
                     justify-self: center;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    width: 7.6rem;
+                    height: 2.7rem;
+                    border-radius: 6px;
+                    background-color: #3A5F56;
+                    a {
+                        color: #FFFFFF;
+                    }
+                    .cart__href::before {
+                        content: "";
+                        display: inline-block;
+                        background-image: url('../img/basket.svg');
+                        width: 1rem;
+                        height: 1rem;
+                        background-size: cover;
+                        margin-right: 0.4rem;
+                    }
+                    .navigation__cart_count {
+                    margin-left: 0.3rem;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    width: 1.2rem;
+                    height: 1.1rem;
+                    border-radius: 0.6rem;
+                    font-size: 0.6rem;
+                    background-color: #FFFFFF;
+                    }
                 }
             }
         }
     }
+}
+.main {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60.8rem 3fr 3fr 1fr;
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .introLeft {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 4fr 2fr 2fr 1fr 4fr;
+            .introLeft__h1 {
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+            .introLeft__p {
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+            .introLeft__a {
+                grid-column: 1/2;
+                grid-row: 4/5;
+            }
+        }
+        .introRight {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            width: 100%; //34.5rem;
+            height: 100%; //48.3rem;
+            background-image: url('../img/James.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+.footer {
+    grid-column: 2/3;
+    grid-row: 3/4;
 }
