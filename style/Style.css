@@ -159,104 +159,114 @@ div {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center; }
-  .main .services {
-    background-color: chocolate; }
-    .main .services .servicesWrap {
-      max-width: 75rem;
+  .main .services .servicesWrap {
+    max-width: 75rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr; }
+    .main .services .servicesWrap .servicesIntroWrap {
+      grid-column: 1/4;
+      grid-row: 1/2;
+      width: 37rem;
       margin: 0 auto;
-      background-color: bisque;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr auto auto auto; }
+      .main .services .servicesWrap .servicesIntroWrap .servicesIntroWrap__wave {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: inline-block;
+        height: 1.2rem;
+        background-image: url("../img/wawe.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; }
+      .main .services .servicesWrap .servicesIntroWrap .servicesIntroWrap__h3 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        font-family: 'Source Serif Pro', serif;
+        font-size: 2rem;
+        line-height: 0.4rem;
+        text-align: center; }
+      .main .services .servicesWrap .servicesIntroWrap .servicesIntroWrap__p {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem; }
+    .main .services .servicesWrap .servicesGridWrap {
+      grid-row: 2/3;
+      grid-column: 1/4;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 4fr; }
-      .main .services .servicesWrap .servicesIntroWrap {
-        grid-column: 1/4;
-        grid-row: 1/2;
-        width: 37rem;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto; }
-        .main .services .servicesWrap .servicesIntroWrap .servicesIntroWrap__wave {
-          grid-column: 1/2;
-          grid-row: 1/2;
-          display: inline-block;
-          height: 1.2rem;
-          background-image: url("../img/wawe.svg");
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center; }
-        .main .services .servicesWrap .servicesIntroWrap .servicesIntroWrap__h3 {
-          grid-column: 1/2;
-          grid-row: 2/3;
-          font-family: 'Source Serif Pro', serif;
-          font-size: 2rem;
-          line-height: 0.4rem;
-          text-align: center; }
-        .main .services .servicesWrap .servicesIntroWrap .servicesIntroWrap__p {
-          grid-column: 1/2;
-          grid-row: 3/4;
-          font-family: 'Roboto', sans-serif;
-          font-size: 1rem; }
-      .main .services .servicesWrap .servicesGridWrap {
-        grid-row: 2/3;
-        grid-column: 1/4;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        justify-content: space-around;
-        align-content: space-around;
-        gap: 1rem; }
-        .main .services .servicesWrap .servicesGridWrap .s_cell {
-          width: 23.6rem;
-          height: 19rem;
-          border-radius: 1rem;
-          background-color: #F4F3F0;
-          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.03); }
-        .main .services .servicesWrap .servicesGridWrap .s_cell_img {
-          display: inline-block;
-          height: 3rem;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center; }
-        .main .services .servicesWrap .servicesGridWrap .s_cell_h4 {
-          font-family: 'Source Serif Pro', serif;
-          font-size: 1.5rem;
-          line-height: 1.8rem; }
-        .main .services .servicesWrap .servicesGridWrap .p_cell_p {
-          font-family: 'Roboto', sans-serif;
-          font-size: 1rem;
-          line-height: 1.4; }
-        .main .services .servicesWrap .servicesGridWrap .s_cell_btn .s_cell_btn_a::after {
-          content: "";
-          display: inline-block;
-          background-image: url("../img/arrow_a.svg");
-          width: 1.2rem;
-          height: 0.6rem;
-          background-size: cover;
-          margin-right: 0.4rem; }
-        .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div1 {
-          grid-column: 1/2;
-          grid-row: 1/2; }
-          .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div1 .s_cell_img {
-            background-image: url("../img/s_01.svg"); }
-        .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div2 {
-          grid-column: 2/3;
-          grid-row: 1/2; }
-        .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div3 {
-          grid-column: 3/4;
-          grid-row: 1/2; }
-        .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div4 {
-          grid-column: 1/2;
-          grid-row: 2/3; }
-        .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div5 {
-          grid-column: 2/3;
-          grid-row: 2/3; }
-        .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div6 {
-          grid-column: 3/4;
-          grid-row: 2/3; }
-        .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div7 {
-          grid-column: 1/2;
-          grid-row: 3/4; }
+      grid-template-rows: 1fr 1fr 1fr;
+      justify-content: space-around;
+      align-content: space-around;
+      gap: 1rem; }
+      .main .services .servicesWrap .servicesGridWrap .s_cell {
+        width: 23.6rem;
+        height: 19rem;
+        border-radius: 1rem;
+        background-color: #F4F3F0;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.03); }
+      .main .services .servicesWrap .servicesGridWrap .s_cell_img {
+        display: inline-block;
+        height: 3rem;
+        width: 3rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; }
+      .main .services .servicesWrap .servicesGridWrap .s_cell_h4 {
+        font-family: 'Source Serif Pro', serif;
+        font-size: 1.5rem;
+        line-height: 1.8rem; }
+      .main .services .servicesWrap .servicesGridWrap .p_cell_p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        line-height: 1.4; }
+      .main .services .servicesWrap .servicesGridWrap .s_cell_btn .s_cell_btn_a::after {
+        content: "";
+        display: inline-block;
+        background-image: url("../img/arrow_a.svg");
+        width: 1.2rem;
+        height: 0.6rem;
+        background-size: cover;
+        margin-left: 0.2rem; }
+      .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div1 {
+        grid-column: 1/2;
+        grid-row: 1/2; }
+        .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div1 .s_cell_img {
+          background-image: url("../img/s_01.svg"); }
+      .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div2 {
+        grid-column: 2/3;
+        grid-row: 1/2; }
+        .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div2 .s_cell_img {
+          background-image: url("../img/s_02.svg"); }
+      .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div3 {
+        grid-column: 3/4;
+        grid-row: 1/2; }
+        .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div3 .s_cell_img {
+          background-image: url("../img/s_03.svg"); }
+      .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div4 {
+        grid-column: 1/2;
+        grid-row: 2/3; }
+        .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div4 .s_cell_img {
+          background-image: url("../img/s_04.svg"); }
+      .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div5 {
+        grid-column: 2/3;
+        grid-row: 2/3; }
+        .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div5 .s_cell_img {
+          background-image: url("../img/s_05.svg"); }
+      .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div6 {
+        grid-column: 3/4;
+        grid-row: 2/3; }
+        .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div6 .s_cell_img {
+          background-image: url("../img/s_06.svg"); }
+      .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div7 {
+        grid-column: 1/2;
+        grid-row: 3/4; }
+        .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div7 .s_cell_img {
+          background-image: url("../img/s_07.svg"); }
 
 .footer {
   grid-column: 1/4;
