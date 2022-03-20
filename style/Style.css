@@ -401,5 +401,49 @@ div {
 .footer {
   grid-column: 1/4;
   grid-row: 3/4; }
+  .footer .footerGridWrap {
+    margin: 0 auto;
+    max-width: 73rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 5fr 1fr; }
+    .footer .footerGridWrap .footerLogoWrap {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      justify-self: center; }
+      .footer .footerGridWrap .footerLogoWrap .footerLogoWrap_span {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        width: 7rem;
+        height: 1.8rem;
+        background-image: url("../img/Logo_header.svg");
+        background-size: contain; }
+    .footer .footerGridWrap .footerColumnWrap {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr 1fr 2.5fr;
+      grid-template-rows: 1fr 1.5fr; }
+      .footer .footerGridWrap .footerColumnWrap .pages {
+        grid-column: 1/2;
+        grid-row: 1/2; }
+      .footer .footerGridWrap .footerColumnWrap .presetPacks {
+        grid-column: 2/3;
+        grid-row: 1/2; }
+      .footer .footerGridWrap .footerColumnWrap .utilityPages {
+        grid-column: 3/4;
+        grid-row: 1/2; }
+      .footer .footerGridWrap .footerColumnWrap .newsetter {
+        grid-column: 4/5;
+        grid-row: 1/2; }
+      .footer .footerGridWrap .footerColumnWrap .storeCategories {
+        grid-column: 1/2;
+        grid-row: 2/3; }
+      .footer .footerGridWrap .footerColumnWrap .businesAreas {
+        grid-column: 2/3;
+        grid-row: 2/3; }
+    .footer .footerGridWrap .footerInfo {
+      grid-column: 1/2;
+      grid-row: 3/4; }
 
 /*# sourceMappingURL=Style.css.map */
