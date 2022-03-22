@@ -1,18 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Source+Serif+Pro&display=swap");
 html {
   font-size: 16px; }
+  html ul, html li {
+    list-style: none; }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   max-width: 1440px;
-  font-family: 'Roboto', sans-serif; }
-  body ul, body li {
-    list-style: none; }
-  body a:link, body a:active, body a:focus, body a:visited {
-    text-decoration: none;
-    color: #3A5F56; }
+  /* 
+   font-family: 'Roboto', sans-serif;
+   a:link, a:active, a:focus, a:visited {
+       text-decoration: none;
+       color:#3A5F56;
+   }*/ }
 
 /*div {
     border: 1px solid cadetblue;
@@ -272,8 +274,7 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 6rem 10rem auto 2rem 6rem;
-    gap: 2rem; }
+    grid-template-rows: 4rem auto auto 3rem 6rem; }
     .main .preset .presetWrap .presetIntroWrap {
       grid-column: 1/2;
       grid-row: 2/3;
@@ -308,9 +309,8 @@ body {
     .main .preset .presetWrap .presetGridWrap {
       grid-row: 3/4;
       grid-column: 1/2;
-      gap: 2rem;
-      margin: o auto;
       display: grid;
+      justify-items: center;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr; }
       .main .preset .presetWrap .presetGridWrap .p_cell {
@@ -339,25 +339,25 @@ body {
       .main .preset .presetWrap .presetGridWrap .presetGridWrap__div1 {
         grid-column: 1/2;
         grid-row: 1/2;
-        justify-self: center; }
+        justify-self: start; }
         .main .preset .presetWrap .presetGridWrap .presetGridWrap__div1 .img_pr_cell {
           background-image: url("../img/preset_01.png"); }
       .main .preset .presetWrap .presetGridWrap .presetGridWrap__div2 {
         grid-column: 2/3;
-        grid-row: 1/2;
-        justify-self: center; }
+        grid-row: 1/2; }
         .main .preset .presetWrap .presetGridWrap .presetGridWrap__div2 .img_pr_cell {
           background-image: url("../img/preset_02.png"); }
       .main .preset .presetWrap .presetGridWrap .presetGridWrap__div3 {
         grid-column: 3/4;
         grid-row: 1/2;
-        justify-self: center; }
+        justify-self: end; }
         .main .preset .presetWrap .presetGridWrap .presetGridWrap__div3 .img_pr_cell {
           background-image: url("../img/preset_03.png"); }
     .main .preset .presetWrap .presetLinkWrap {
       grid-row: 4/5;
       grid-column: 1/4;
-      margin: 0 auto; }
+      margin: 0 auto;
+      align-self: center; }
       .main .preset .presetWrap .presetLinkWrap .presetLinkWrap_span {
         width: 7.3rem;
         height: 1.5rem; }
@@ -376,26 +376,25 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 6rem auto 6rem;
   align-content: center;
-  background-color: darkkhaki; }
+  background-color: #FFFFFF; }
   .main .contact .contactWrap .contactWrapGrid {
-    background-color: #FFFFFF;
-    max-width: 50rem;
-    margin: 0 auto;
     grid-column: 1/2;
     grid-row: 2/3;
+    background-color: #F4F3F0;
+    max-width: 50rem;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr; }
+    grid-template-columns: 0.5fr 4fr 1fr 1.5fr 0.5fr;
+    grid-template-rows: 0.5fr 1fr 0.4fr;
+    border-radius: 1rem; }
     .main .contact .contactWrap .contactWrapGrid .contactWrap__paragraph {
-      grid-column: 1/2;
-      grid-row: 1/2;
-      font-size: 1.75rem;
-      justify-self: center; }
-      .main .contact .contactWrap .contactWrapGrid .contactWrap__paragraph .contactWrap__paragraph_p {
-        width: 19.6rem; }
-    .main .contact .contactWrap .contactWrapGrid .contactWrap__btn_a {
       grid-column: 2/3;
-      grid-row: 1/2;
+      grid-row: 2/3;
+      font-size: 1.5rem;
+      justify-self: center; }
+    .main .contact .contactWrap .contactWrapGrid .contactWrap__btn_a {
+      grid-column: 4/5;
+      grid-row: 2/3;
       align-self: center;
       width: 7.8rem;
       height: 3.6rem;
@@ -419,24 +418,29 @@ body {
     max-width: 75rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 5fr 1fr; }
+    grid-template-rows: 2fr 5fr 1fr 3rem;
+    gap: 1rem; }
     .footer .footerGridWrap .footerLogoWrap {
       grid-column: 1/2;
       grid-row: 1/2;
-      justify-self: center; }
+      justify-self: center;
+      align-self: center; }
       .footer .footerGridWrap .footerLogoWrap .footerLogoWrap_span {
         grid-row: 1/2;
         grid-column: 1/2;
         width: 7rem;
         height: 1.8rem;
         background-image: url("../img/Logo_header.svg");
-        background-size: contain; }
+        background-size: contain;
+        background-repeat: no-repeat; }
     .footer .footerGridWrap .footerColumnWrap {
       grid-column: 1/2;
       grid-row: 2/3;
       display: grid;
       grid-template-columns: 1fr 1.5fr 1fr 2.5fr;
       grid-template-rows: 1fr 1.5fr; }
+      .footer .footerGridWrap .footerColumnWrap .ch_cl {
+        color: #B87D58; }
       .footer .footerGridWrap .footerColumnWrap .pages {
         grid-column: 1/2;
         grid-row: 1/2; }
