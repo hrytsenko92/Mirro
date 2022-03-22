@@ -17,9 +17,9 @@ body {
         color:#3A5F56;
     }
 }
-div {
+/*div {
     border: 1px solid cadetblue;
-}
+}*/
 
 .header {
     background-color: #FFFFFF;
@@ -181,13 +181,13 @@ div {
         }
     }
     .services {
-        background-color: bisque;
+        background-color:#FFFFFF;
         .servicesWrap {
             max-width: 75rem;
             margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 6rem 10rem 59rem 6rem;
+            grid-template-rows: 6rem 10rem auto 6rem; //59rem - 3
             justify-content: space-between;
             align-items: center;
             gap: 1rem;
@@ -326,16 +326,18 @@ div {
         }
     }
     .preset {
-        background-color: aquamarine;
+        background-color: #F4F3F0;
         .presetWrap{
             max-width: 75rem;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1.5fr 4fr 0.5fr;
+            grid-template-columns: 1fr;
+            grid-template-rows: 6rem 10rem auto 2rem 6rem;
+            gap: 2rem;
             .presetIntroWrap {
-                grid-column: 1/4;
-                grid-row: 1/2;
+                grid-column: 1/2;
+                grid-row: 2/3;
+                align-self: center;
                 width: 37rem;
                 margin: 0 auto;
                 display: grid;
@@ -358,6 +360,7 @@ div {
                     font-size: 2rem;
                     line-height: 0.4rem;
                     text-align: center;
+                    color: #DB343B;
                 }
                 .presetIntroWrap__p {
                     grid-column: 1/2;
@@ -367,8 +370,9 @@ div {
                 }
             }
             .presetGridWrap {
-                grid-row: 2/3;
-                grid-column: 1/4;
+                grid-row: 3/4;
+                grid-column: 1/2;
+                gap: 2rem;
                 margin: o auto;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
@@ -391,12 +395,14 @@ div {
                 .h4_pr_cell {
                     font-family: 'Source Serif Pro', serif;
                     font-size: 1.5rem;
-                    line-height: 1.8rem;
+                    line-height: 1rem;
+                    padding: 0 1rem;
                 }
                 .pr_cell_p {
                     font-family: 'Roboto', sans-serif;
                     font-size: 1rem;
                     line-height: 1.4;
+                    padding: 0 1rem;
                 }
 
                 .presetGridWrap__div1 {
@@ -425,7 +431,7 @@ div {
                 }
             }
             .presetLinkWrap {
-                grid-row: 3/4;
+                grid-row: 4/5;
                 grid-column: 1/4;
                 margin: 0 auto;
                 .presetLinkWrap_span {
@@ -450,38 +456,47 @@ div {
     }
     .contact {
         .contactWrap {
-        max-width: 50rem;
-        margin: 0 auto;
         display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 6rem auto 6rem;
         align-content: center;
-        .contactWrap__paragraph {
+        background-color: darkkhaki;
+        .contactWrapGrid {
+            background-color: #FFFFFF;
+            max-width: 50rem;
+            margin: 0 auto;
             grid-column: 1/2;
-            grid-row: 1/2;
-            font-size: 1.75rem;
-            justify-self: center;
-            .contactWrap__paragraph_p {
-                width: 19.6rem;
+            grid-row: 2/3;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-template-rows: 1fr;
+            .contactWrap__paragraph {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                font-size: 1.75rem;
+                justify-self: center;
+                .contactWrap__paragraph_p {
+                    width: 19.6rem;
+                }
             }
-        }
-        .contactWrap__btn_a {
-            grid-column: 2/3;
-            grid-row: 1/2;
-            align-self: center;
-            width: 7.8rem;
-            height: 3.6rem;
-            border-radius: 6px;
-            background-color: #3A5F56;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center;
-            .contactWrap__btn {
-                width: 4.7rem;
-                height: 1.7rem;
-                color: #FFFFFF;
-                font-size: 1.2rem;
+            .contactWrap__btn_a {
+                grid-column: 2/3;
+                grid-row: 1/2;
+                align-self: center;
+                width: 7.8rem;
+                height: 3.6rem;
+                border-radius: 6px;
+                background-color: #3A5F56;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                .contactWrap__btn {
+                    width: 4.7rem;
+                    height: 1.7rem;
+                    color: #FFFFFF;
+                    font-size: 1.2rem;
+                }
             }
         }
         }

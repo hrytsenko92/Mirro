@@ -14,9 +14,9 @@ body {
     text-decoration: none;
     color: #3A5F56; }
 
-div {
-  border: 1px solid cadetblue; }
-
+/*div {
+    border: 1px solid cadetblue;
+}*/
 .header {
   background-color: #FFFFFF; }
   .header .headerWrap {
@@ -151,13 +151,13 @@ div {
       background-repeat: no-repeat;
       background-position: center; }
 .main .services {
-  background-color: bisque; }
+  background-color: #FFFFFF; }
   .main .services .servicesWrap {
     max-width: 75rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 6rem 10rem 59rem 6rem;
+    grid-template-rows: 6rem 10rem auto 6rem;
     justify-content: space-between;
     align-items: center;
     gap: 1rem; }
@@ -266,16 +266,18 @@ div {
         .main .services .servicesWrap .servicesGridWrap .servicesGridWrap__div7 .s_cell_img {
           background-image: url("../img/s_07.svg"); }
 .main .preset {
-  background-color: aquamarine; }
+  background-color: #F4F3F0; }
   .main .preset .presetWrap {
     max-width: 75rem;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1.5fr 4fr 0.5fr; }
+    grid-template-columns: 1fr;
+    grid-template-rows: 6rem 10rem auto 2rem 6rem;
+    gap: 2rem; }
     .main .preset .presetWrap .presetIntroWrap {
-      grid-column: 1/4;
-      grid-row: 1/2;
+      grid-column: 1/2;
+      grid-row: 2/3;
+      align-self: center;
       width: 37rem;
       margin: 0 auto;
       display: grid;
@@ -296,15 +298,17 @@ div {
         font-family: 'Source Serif Pro', serif;
         font-size: 2rem;
         line-height: 0.4rem;
-        text-align: center; }
+        text-align: center;
+        color: #DB343B; }
       .main .preset .presetWrap .presetIntroWrap .presetIntroWrap__p {
         grid-column: 1/2;
         grid-row: 4/5;
         font-family: 'Roboto', sans-serif;
         font-size: 1rem; }
     .main .preset .presetWrap .presetGridWrap {
-      grid-row: 2/3;
-      grid-column: 1/4;
+      grid-row: 3/4;
+      grid-column: 1/2;
+      gap: 2rem;
       margin: o auto;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -325,11 +329,13 @@ div {
       .main .preset .presetWrap .presetGridWrap .h4_pr_cell {
         font-family: 'Source Serif Pro', serif;
         font-size: 1.5rem;
-        line-height: 1.8rem; }
+        line-height: 1rem;
+        padding: 0 1rem; }
       .main .preset .presetWrap .presetGridWrap .pr_cell_p {
         font-family: 'Roboto', sans-serif;
         font-size: 1rem;
-        line-height: 1.4; }
+        line-height: 1.4;
+        padding: 0 1rem; }
       .main .preset .presetWrap .presetGridWrap .presetGridWrap__div1 {
         grid-column: 1/2;
         grid-row: 1/2;
@@ -349,7 +355,7 @@ div {
         .main .preset .presetWrap .presetGridWrap .presetGridWrap__div3 .img_pr_cell {
           background-image: url("../img/preset_03.png"); }
     .main .preset .presetWrap .presetLinkWrap {
-      grid-row: 3/4;
+      grid-row: 4/5;
       grid-column: 1/4;
       margin: 0 auto; }
       .main .preset .presetWrap .presetLinkWrap .presetLinkWrap_span {
@@ -366,36 +372,44 @@ div {
         background-size: cover;
         margin-left: 0.2rem; }
 .main .contact .contactWrap {
-  max-width: 50rem;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr;
-  align-content: center; }
-  .main .contact .contactWrap .contactWrap__paragraph {
+  grid-template-columns: 1fr;
+  grid-template-rows: 6rem auto 6rem;
+  align-content: center;
+  background-color: darkkhaki; }
+  .main .contact .contactWrap .contactWrapGrid {
+    background-color: #FFFFFF;
+    max-width: 50rem;
+    margin: 0 auto;
     grid-column: 1/2;
-    grid-row: 1/2;
-    font-size: 1.75rem;
-    justify-self: center; }
-    .main .contact .contactWrap .contactWrap__paragraph .contactWrap__paragraph_p {
-      width: 19.6rem; }
-  .main .contact .contactWrap .contactWrap__btn_a {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    align-self: center;
-    width: 7.8rem;
-    height: 3.6rem;
-    border-radius: 6px;
-    background-color: #3A5F56;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center; }
-    .main .contact .contactWrap .contactWrap__btn_a .contactWrap__btn {
-      width: 4.7rem;
-      height: 1.7rem;
-      color: #FFFFFF;
-      font-size: 1.2rem; }
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr; }
+    .main .contact .contactWrap .contactWrapGrid .contactWrap__paragraph {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      font-size: 1.75rem;
+      justify-self: center; }
+      .main .contact .contactWrap .contactWrapGrid .contactWrap__paragraph .contactWrap__paragraph_p {
+        width: 19.6rem; }
+    .main .contact .contactWrap .contactWrapGrid .contactWrap__btn_a {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      align-self: center;
+      width: 7.8rem;
+      height: 3.6rem;
+      border-radius: 6px;
+      background-color: #3A5F56;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center; }
+      .main .contact .contactWrap .contactWrapGrid .contactWrap__btn_a .contactWrap__btn {
+        width: 4.7rem;
+        height: 1.7rem;
+        color: #FFFFFF;
+        font-size: 1.2rem; }
 
 .footer {
   background-color: #292C32;
