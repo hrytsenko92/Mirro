@@ -1,20 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Source+Serif+Pro&display=swap");
 html {
   font-size: 16px; }
-  html ul, html li {
-    list-style: none; }
-
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  max-width: 1440px;
-  /* 
-   font-family: 'Roboto', sans-serif;
-   a:link, a:active, a:focus, a:visited {
-       text-decoration: none;
-       color:#3A5F56;
-   }*/ }
+  html body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1440px;
+    font-family: 'Roboto', sans-serif; }
+    html body ul, html body li {
+      list-style: none; }
+    html body a, html body a:link {
+      text-decoration: none;
+      color: #3A5F56; }
 
 /*div {
     border: 1px solid cadetblue;
@@ -106,7 +103,7 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 6.25rem 48.3rem 6.25rem; }
+    grid-template-rows: 6rem 48.3rem 6rem; }
     .main .intro .introWrap .introLeft {
       grid-column: 1/2;
       grid-row: 2/3;
@@ -146,12 +143,13 @@ body {
     .main .intro .introWrap .introRight {
       grid-column: 2/3;
       grid-row: 2/3;
+      justify-self: end;
       width: 100%;
       height: 100%;
       background-image: url("../img/James.png");
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: center; }
+      background-position: right; }
 .main .services {
   background-color: #FFFFFF; }
   .main .services .servicesWrap {
