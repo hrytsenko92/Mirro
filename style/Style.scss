@@ -587,6 +587,12 @@ html {
             display: grid;
             grid-template-columns: 1fr 1.5fr 1fr 2.5fr;
             grid-template-rows: 1fr 1.5fr;
+            li {
+                padding: 0.5rem 0;
+                a {
+                    color: #FFFFFF;
+                }
+            }
             .ch_cl {
                 color: #B87D58;
             }

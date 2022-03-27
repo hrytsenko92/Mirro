@@ -486,6 +486,10 @@ html {
       display: grid;
       grid-template-columns: 1fr 1.5fr 1fr 2.5fr;
       grid-template-rows: 1fr 1.5fr; }
+      .footer .footerGridWrap .footerColumnWrap li {
+        padding: 0.5rem 0; }
+        .footer .footerGridWrap .footerColumnWrap li a {
+          color: #FFFFFF; }
       .footer .footerGridWrap .footerColumnWrap .ch_cl {
         color: #B87D58; }
       .footer .footerGridWrap .footerColumnWrap .pages {
