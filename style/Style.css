@@ -8,7 +8,8 @@ html {
     max-width: 1440px;
     font-family: 'Roboto', sans-serif; }
     html body ul, html body li {
-      list-style: none; }
+      list-style: none;
+      padding-inline-start: 0px; }
     html body a, html body a:link {
       text-decoration: none;
       color: #3A5F56; }
@@ -501,9 +502,16 @@ html {
       .footer .footerGridWrap .footerColumnWrap .utilityPages {
         grid-column: 3/4;
         grid-row: 1/2; }
-      .footer .footerGridWrap .footerColumnWrap .newsetter {
+      .footer .footerGridWrap .footerColumnWrap .newsletter {
         grid-column: 4/5;
         grid-row: 1/2; }
+        .footer .footerGridWrap .footerColumnWrap .newsletter .newsletter_search_wrap .newsletter_search {
+          display: block;
+          width: 28.6rem;
+          height: 3.3rem;
+          background-color: #F9FAFB;
+          border: 1px solid #E5E7EB;
+          border-radius: 8px; }
       .footer .footerGridWrap .footerColumnWrap .storeCategories {
         grid-column: 1/2;
         grid-row: 2/3; }

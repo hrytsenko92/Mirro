@@ -9,6 +9,7 @@ html {
         max-width: 1440px;
         ul, li {
             list-style: none;
+            padding-inline-start: 0px;
         }
         font-family: 'Roboto', sans-serif;
         a, a:link {
@@ -596,6 +597,7 @@ html {
             .ch_cl {
                 color: #B87D58;
             }
+
             .pages {
                 grid-column: 1/2;
                 grid-row: 1/2;
@@ -608,9 +610,19 @@ html {
                 grid-column: 3/4;
                 grid-row: 1/2;
             }
-            .newsetter {
+            .newsletter {
                 grid-column: 4/5;
                 grid-row: 1/2;
+                .newsletter_search_wrap {
+                    .newsletter_search{
+                        display: block;
+                        width: 28.6rem;
+                        height: 3.3rem;
+                        background-color: #F9FAFB;
+                        border: 1px solid #E5E7EB;
+                        border-radius: 8px;
+                    }
+                }
             }
             .storeCategories {
                 grid-column: 1/2;
