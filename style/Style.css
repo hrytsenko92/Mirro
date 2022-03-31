@@ -2,10 +2,9 @@
 html {
   font-size: 16px; }
   html body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    max-width: 1440px;
     font-family: 'Roboto', sans-serif; }
     html body ul, html body li {
       list-style: none;
@@ -98,7 +97,7 @@ html {
 
 .main .intro {
   background-color: #F4F3F0;
-  height: 60.8rem;
+  max-height: 60.8rem;
   position: relative;
   z-index: 10;
   padding: 0 2rem; }
@@ -121,7 +120,7 @@ html {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 6rem 48.3rem 6rem; }
+    grid-template-rows: 5rem 48.3rem 5rem; }
     .main .intro .introWrap .introLeft {
       grid-column: 1/2;
       grid-row: 2/3;
@@ -352,13 +351,14 @@ html {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr; }
       .main .preset .presetWrap .presetGridWrap .p_cell {
-        width: 23.6rem;
-        height: 27.4rem;
+        max-width: 23.6rem;
+        max-height: auto;
         border-radius: 1rem;
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-        background-color: #FFFFFF; }
+        background-color: #FFFFFF;
+        margin: 1rem; }
       .main .preset .presetWrap .presetGridWrap .img_pr_cell {
-        max-width: 100%;
+        width: auto;
         height: 15.8rem;
         display: block;
         background-size: cover;
@@ -592,5 +592,29 @@ html {
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover; }
+
+@media screen and (max-width: 59.3rem) {
+  .header .headerWrap {
+    max-width: 59.3rem;
+    display: grid;
+    grid-template-rows: 4.37rem;
+    grid-template-columns: 0.5fr 0.1fr 2.3fr; }
+
+  .main .intro {
+    max-height: 100%; }
+    .main .intro .introWrap {
+      max-width: 59rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1rem 1fr 1fr 0.1rem; }
+      .main .intro .introWrap .introLeft {
+        grid-column: 1/2;
+        grid-row: 3/4; }
+      .main .intro .introWrap .introRight {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        justify-self: center;
+        background-position: center;
+        max-height: 48rem; } }
 
 /*# sourceMappingURL=Style.css.map */
