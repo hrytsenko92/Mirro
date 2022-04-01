@@ -609,12 +609,48 @@ html {
       grid-template-rows: 1rem 1fr 1fr 0.1rem; }
       .main .intro .introWrap .introLeft {
         grid-column: 1/2;
-        grid-row: 3/4; }
+        grid-row: 3/4;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 0.4fr; }
+        .main .intro .introWrap .introLeft .introLeft__h1 {
+          grid-column: 1/2;
+          grid-row: 1/2;
+          text-align: center; }
+        .main .intro .introWrap .introLeft .introLeft__p {
+          grid-column: 1/2;
+          grid-row: 2/3; }
+        .main .intro .introWrap .introLeft .introLeft__a {
+          grid-column: 1/2;
+          grid-row: 3/4;
+          justify-self: center; }
       .main .intro .introWrap .introRight {
         grid-column: 1/2;
         grid-row: 2/3;
         justify-self: center;
         background-position: center;
-        max-height: 48rem; } }
+        max-height: 48rem; }
+  .main .services .servicesWrap .servicesGridWrap {
+    gap: 5px; }
+    .main .services .servicesWrap .servicesGridWrap .s_cell_img {
+      height: 2rem;
+      width: 2rem; }
+    .main .services .servicesWrap .servicesGridWrap .s_cell_h4 {
+      font-size: 1.3rem;
+      line-height: 1.5rem; }
+    .main .services .servicesWrap .servicesGridWrap .p_cell_p {
+      font-size: 0.8rem; }
+  .main .preset .presetWrap .presetGridWrap .h4_pr_cell {
+    font-size: 1.2rem;
+    line-height: 1.2rem; }
+  .main .preset .presetWrap .presetGridWrap .pr_cell_p {
+    font-size: 0.9rem; }
+  .main .contact .contactWrap {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr; }
+    .main .contact .contactWrap .contactWrapGrid {
+      grid-column: 2/3;
+      grid-row: 2/3; } }
 
 /*# sourceMappingURL=Style.css.map */

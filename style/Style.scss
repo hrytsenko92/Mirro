@@ -740,6 +740,23 @@ html {
                 .introLeft {
                     grid-column: 1/2;
                     grid-row: 3/4;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr 0.4fr;
+                    .introLeft__h1 {
+                        grid-column: 1/2;
+                        grid-row: 1/2;
+                        text-align: center;
+                    }
+                    .introLeft__p {
+                        grid-column: 1/2;
+                        grid-row: 2/3;
+                    }
+                    .introLeft__a {
+                        grid-column: 1/2;
+                        grid-row: 3/4;
+                        justify-self: center;
+                    }
 
                 }
                 .introRight {
@@ -749,6 +766,49 @@ html {
                     background-position: center;
                     max-height: 48rem;
                 
+                }
+            }
+        }
+        .services {
+            .servicesWrap {
+                .servicesGridWrap {
+                    gap: 5px;
+                    .s_cell_img {
+                        height: 2rem;
+                        width: 2rem;
+                    }
+                    .s_cell_h4 {
+                        font-size: 1.3rem;
+                        line-height: 1.5rem;
+                    }
+                    .p_cell_p {
+                        font-size: 0.8rem;
+                    }
+                }
+                
+            }
+        } 
+        .preset {
+            .presetWrap {
+                .presetGridWrap {
+                    .h4_pr_cell {
+                        font-size: 1.2rem;
+                        line-height: 1.2rem;
+                    }
+                    .pr_cell_p {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+        .contact {
+            .contactWrap {
+                display: grid;
+                grid-template-columns: 1fr 5fr 1fr;
+                grid-template-rows: 1fr 3fr 1fr;
+                .contactWrapGrid {
+                    grid-column: 2/3;
+                    grid-row: 2/3;
                 }
             }
         }
