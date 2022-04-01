@@ -15,6 +15,9 @@ html {
             text-decoration: none;
             color:#3A5F56;
         }
+        #email:focus {
+            outline: none;
+        }
     }
 }
 .header {
@@ -622,8 +625,8 @@ html {
                         grid-template-rows: 1fr;
                         justify-items: center;
                         align-content: center;
-                        width: 28.6rem;
-                        height: 3.3rem;
+                        max-width: 28.6rem;
+                        max-height: 3.3rem;
                         background-color: #FFFFFF;
                         border: 1px solid #E5E7EB;
                         border-radius: 8px;
@@ -670,7 +673,8 @@ html {
                 grid-column: 1/2;
                 grid-row: 1/2;
                 .webflow {
-                    padding-left: 1rem;
+                    padding-left: 0.4rem;
+                    color: #DB343B;
                 }
             }
             .social {
@@ -813,5 +817,58 @@ html {
             }
         }
     }
-}
+    .footer {
+        .footerGridWrap {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 1.5fr 0.4fr;
+            .footerColumnWrap {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1.3fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 0.5rem;
+                .pages {
+                    grid-column: 1/2;
+                    grid-row: 1/2;///
+                }
+                .presetPacks {
+                    grid-column: 1/2;
+                    grid-row: 2/3;//
+                }
+                .utilityPages {
+                    grid-column: 2/3;
+                    grid-row: 2/3;//
+                }
+                .newsletter {
+                    grid-column: 2/5;
+                    grid-row: 1/2;///
+                }
+                .storeCategories {
+                    grid-column: 4/5;
+                    grid-row: 2/3;
+                }
+                .businesAreas {
+                    grid-column: 3/4;
+                    grid-row: 2/3;
+                }
 
+            }
+        }
+    }
+}
+@media screen and (max-width: 42rem) {
+    .main {
+        .services {
+            .servicesWrap {
+                .servicesGridWrap {
+                    .p_cell_p {
+                        font-size: 0.7rem;
+                    }
+                    .s_cell_h4  {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
