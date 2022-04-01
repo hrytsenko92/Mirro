@@ -187,7 +187,7 @@ html {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 6rem 10rem auto 6rem;
+    grid-template-rows: 6rem 14rem auto 6rem;
     justify-content: space-between;
     align-items: center;
     gap: 1rem; }
