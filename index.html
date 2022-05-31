@@ -12,7 +12,28 @@
 <body>
     <header class="header">
         <div class="headerWrap">
-            <div class="logo"></div>
+            <section class="top-nav">
+                <div class="logo">
+                </div>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+              </label>
+                <ul class="menu">
+                  <li><a href="#">Presets</a></li>
+                  <li><a href="#">Prints</a></li>
+                  <li><a href="#">Store</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#" class="cart__href">Cart</a>
+                    <div class="navigation__cart_count">
+                        <span class="cart__count_span">0</span>
+                    </div>
+                    
+            </li>
+                </ul>
+              </section>
+            <!-- <div class="logo"></div>
             <ul class="navigation__ul">
                 <li class="navigation__presets"><a href="#">Presets</a></li>
                 <li class="navigation__prints"><a href="#">Prints</a></li>
@@ -26,7 +47,7 @@
                         </div>
                         
                 </li>
-            </ul>
+            </ul> -->
         </div>
     </header>
     <main class="main">
