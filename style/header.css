@@ -4,7 +4,7 @@
   margin: 0 auto;
   border: 1px solid red; }
   .header .headerWrap {
-    max-width: 90%;
+    max-width: 95%;
     margin: 0 auto; }
 
 .logo {
@@ -17,10 +17,10 @@
 .card-wrap {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-items: flex-end;
   align-items: center;
   padding: 9px;
-  border-radius: 3px;
+  border-radius: 4px;
   gap: 4px;
   background-color: var(--basic-title-color); }
 
@@ -36,6 +36,7 @@
   background-size: cover; }
 
 .cart__count {
+  align-self: flex-end;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -111,7 +112,7 @@
   margin-top: 0px;
   transform: rotate(-405deg); }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .menu-button-container {
     display: flex; }
 
