@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Serif+Pro&display=swap');
 @import url('../style/header.css');
+@import url('../style/main.css');
 
 
 html {
@@ -20,7 +21,7 @@ html {
 
 
 
-/*
+/* 
 .main {
     .intro {
         background-color: #F4F3F0;
@@ -107,7 +108,7 @@ html {
             }
         }
     }
-    .services {
+   .services {
         background-color:#FFFFFF;
         position: relative;
         z-index: 11;

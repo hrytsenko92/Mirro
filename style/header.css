@@ -1,32 +1,63 @@
 .header {
   position: relative;
   max-width: 1440px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border: 1px solid red; }
   .header .headerWrap {
     max-width: 90%;
     margin: 0 auto; }
-    .header .headerWrap .logo {
-      width: 120px;
-      height: 50px;
-      background-image: url("../img/Logo_header.svg");
-      background-size: contain;
-      background-repeat: no-repeat; }
+
+.logo {
+  width: 120px;
+  height: 40px;
+  background-image: url("../img/Logo_header.svg");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.card-wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px;
+  border-radius: 3px;
+  gap: 4px;
+  background-color: var(--basic-title-color); }
+
+.cart__href {
+  color: var(--just-white); }
+
+.cart__href_before {
+  content: "";
+  display: inline-block;
+  background-image: url("../img/basket.svg");
+  width: 17px;
+  height: 17px;
+  background-size: cover; }
+
+.cart__count {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 1px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--just-white); }
 
 .top-nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #00baf0;
-  background: linear-gradient(to left, #f46b45, #eea849);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #fff;
-  height: 50px;
+  background-color: var(--just-white);
+  color: var(--basic-title-color);
   padding: 1em; }
 
 .menu {
   display: flex;
   flex-direction: row;
+  align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0; }
@@ -34,6 +65,9 @@
 .menu > li {
   margin: 0 1rem;
   overflow: hidden; }
+
+.menu > li > a {
+  text-decoration: none; }
 
 .menu-button-container {
   display: none;
@@ -51,7 +85,7 @@
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: #fff;
+  background-color: var(--basic-title-color);
   position: absolute;
   height: 4px;
   width: 30px;
@@ -110,10 +144,40 @@
     margin: 0;
     padding: 0.5em 0;
     width: 100%;
-    color: white;
-    background-color: #222; }
+    background-color: var(--basic-background-color); }
 
   .menu > li:not(:last-child) {
-    border-bottom: 1px solid #444; } }
+    border-bottom: 1px solid #444; }
+
+  .card-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
+    border-radius: 3px;
+    gap: 4px;
+    background-color: var(--basic-title-color); }
+
+  .cart__href {
+    color: var(--basic-title-color); }
+
+  .cart__href_before {
+    content: "";
+    display: inline-block;
+    background-image: url("../img/basket.svg");
+    width: 17px;
+    height: 17px;
+    background-size: cover; }
+
+  .cart__count {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--just-white); } }
 
 /*# sourceMappingURL=header.css.map */
