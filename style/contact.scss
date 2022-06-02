@@ -11,36 +11,39 @@
             background: radial-gradient(50% 50% at 50% 50%, rgba(184, 125, 88, 0.35) 0%, rgba(184, 125, 88, 0) 100%);
         }
         .contactWrap {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 6rem auto 6rem;
-        align-content: center;
-        background-color: #FFFFFF;
+        padding: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: var(--just-white);
         .contactWrapGrid {
             grid-column: 1/2;
             grid-row: 2/3;
-            background-color: #F4F3F0;
-            max-width: 50rem;
+            max-width: 90%;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: 0.5fr 4fr 1fr 1.5fr 0.5fr;
-            grid-template-rows: 0.5fr 1fr 0.4fr;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            justify-items: center;
+            align-content: space-around;
             border-radius: 1rem;
             .contactWrap__paragraph {
-                grid-column: 2/3;
-                grid-row: 2/3;
-                font-size: 1.5rem;
-                justify-self: center;
+                grid-column: 1/2;
+                grid-row: 1/2;
+                max-width: 90%;
+                align-self: end;
+                font-size: 1.1rem;
+                text-align: center;
                 .contactWrap__paragraph_p {
-                    //max-width: 19.6rem;
                 }
             }
             .contactWrap__btn_a {
-                grid-column: 4/5;
-                grid-row: 2/3;
+                grid-column: 1/2;
+                grid-row: 2/3;  
                 align-self: center;
-                width: 7.8rem;
-                height: 3.6rem;
+                width: 118px;
+                height: 44px;
                 border-radius: 6px;
                 background-color: #3A5F56;
                 display: flex;
@@ -48,13 +51,24 @@
                 justify-content: center;
                 align-items: center;
                 .contactWrap__btn {
+                    text-decoration: none;
                     width: 4.7rem;
                     height: 1.7rem;
                     color: #FFFFFF;
-                    font-size: 1.2rem;
+                    font-size: 1rem;
+                    text-align: center;
                 }
             }
         }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .contact {
+        .contactWrap {
+            .contactWrapGrid {
+                background-color: #F4F3F0;
+            }
         }
     }
 }
