@@ -2,8 +2,8 @@
   .footer {
     position: relative;
     z-index: 14;
-    background-color: --text-color;
-    color: --just-white;
+    background-color: var(--text-color);
+    color: var(--just-white);
     padding: 2rem; }
     .footer .footerGridWrap {
       margin: 0 auto;
