@@ -41,7 +41,7 @@
           width: 118px;
           height: 44px;
           border-radius: 6px;
-          background-color: #3A5F56;
+          background-color: #3a5f56;
           display: flex;
           flex-flow: row nowrap;
           justify-content: center;
@@ -50,11 +50,11 @@
             text-decoration: none;
             width: 4.7rem;
             height: 1.7rem;
-            color: #FFFFFF;
+            color: #ffffff;
             font-size: 1rem;
             text-align: center; } }
 @media screen and (min-width: 768px) {
   .contact .contactWrap .contactWrapGrid {
-    background-color: #F4F3F0; } }
+    background-color: --basic-background-color; } }
 
 /*# sourceMappingURL=contact.css.map */

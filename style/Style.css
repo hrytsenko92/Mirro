@@ -5,18 +5,20 @@
 @import url("../style/preset.css");
 @import url("../style/contact.css");
 @import url("../style/footer.css");
-html, body {
+html,
+body {
   font-size: 16px;
   margin: 0 auto;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  --basic-title-color: #3A5F56;
-  --text-color: #292C32;
-  --basic-background-color: #F4F3F0;
-  --title-red: #DB343B;
-  --just-white: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  --basic-title-color: #3a5f56;
+  --text-color: #292c32;
+  --basic-background-color: #f4f3f0;
+  --title-red: #db343b;
+  --just-white: #ffffff;
   --menu-li: #333;
-  --menu-li-not: #444; }
+  --menu-li-not: #444;
+  --footer-item: #b87d58; }
 
 /*font-family: 'Roboto', sans-serif;
 font-family: 'Source Serif Pro', serif;*/

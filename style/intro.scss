@@ -2,12 +2,12 @@
   .intro {
     position: relative;
     z-index: 10;
+    background-color: var(--basic-background-color);
     .intro__gradient_wrap {
       max-width: 1440px;
       margin: 0 auto;
       position: relative;
       overflow: hidden;
-      background-color: var(--basic-background-color);
       .gradient_1 {
         position: absolute;
         height: 31rem;

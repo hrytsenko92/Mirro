@@ -1,6 +1,6 @@
 @media screen and (min-width: 320px) {
   .services {
-    padding-top: 2rem;
+    padding: 2rem;
     background-color: var(--just-white);
     position: relative;
     z-index: 11; }
@@ -38,7 +38,7 @@
         .services .servicesWrap .servicesIntroWrap .servicesIntroWrap__h3 {
           grid-column: 1/2;
           grid-row: 2/3;
-          font-family: 'Source Serif Pro', serif;
+          font-family: "Source Serif Pro", serif;
           font-size: 2rem;
           line-height: 0.4rem;
           text-align: center;
@@ -46,7 +46,7 @@
         .services .servicesWrap .servicesIntroWrap .servicesIntroWrap__p {
           grid-column: 1/2;
           grid-row: 3/4;
-          max-width: 600px;
+          max-width: 70%;
           align-self: center;
           justify-self: center;
           font-size: 16px; }
@@ -63,7 +63,7 @@
           max-width: 270px;
           max-height: 270px;
           border-radius: 10px;
-          background-color: #F4F3F0;
+          background-color: var(--basic-background-color);
           box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.03);
           justify-self: center;
           padding: 1.9rem; }
@@ -75,10 +75,10 @@
           background-repeat: no-repeat;
           background-position: center; }
         .services .servicesWrap .servicesGridWrap .s_cell_h4 {
-          font-family: 'Source Serif Pro', serif;
+          font-family: "Source Serif Pro", serif;
           font-size: 18px; }
         .services .servicesWrap .servicesGridWrap .p_cell_p {
-          font-family: 'Roboto', sans-serif;
+          font-family: "Roboto", sans-serif;
           font-size: 14px; }
         .services .servicesWrap .servicesGridWrap .s_cell_btn .s_cell_btn_a {
           text-decoration: none; }
@@ -152,29 +152,33 @@
       grid-column: 2/3;
       grid-row: 4/5; } }
 @media screen and (min-width: 950px) {
-  .services .servicesWrap .servicesGridWrap {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr; }
-    .services .servicesWrap .servicesGridWrap .servicesGridWrap__div1 {
-      grid-column: 1/2;
-      grid-row: 1/2; }
-    .services .servicesWrap .servicesGridWrap .servicesGridWrap__div2 {
-      grid-column: 2/3;
-      grid-row: 1/2; }
-    .services .servicesWrap .servicesGridWrap .servicesGridWrap__div3 {
-      grid-column: 3/4;
-      grid-row: 1/2; }
-    .services .servicesWrap .servicesGridWrap .servicesGridWrap__div4 {
-      grid-column: 1/2;
-      grid-row: 2/3; }
-    .services .servicesWrap .servicesGridWrap .servicesGridWrap__div5 {
-      grid-column: 2/3;
-      grid-row: 2/3; }
-    .services .servicesWrap .servicesGridWrap .servicesGridWrap__div6 {
-      grid-column: 3/4;
-      grid-row: 2/3; }
-    .services .servicesWrap .servicesGridWrap .servicesGridWrap__div7 {
-      grid-column: 1/2;
-      grid-row: 3/4; } }
+  .services .servicesWrap {
+    max-width: 1150px; }
+    .services .servicesWrap .servicesIntroWrap .servicesIntroWrap__p {
+      max-width: 50%; }
+    .services .servicesWrap .servicesGridWrap {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr; }
+      .services .servicesWrap .servicesGridWrap .servicesGridWrap__div1 {
+        grid-column: 1/2;
+        grid-row: 1/2; }
+      .services .servicesWrap .servicesGridWrap .servicesGridWrap__div2 {
+        grid-column: 2/3;
+        grid-row: 1/2; }
+      .services .servicesWrap .servicesGridWrap .servicesGridWrap__div3 {
+        grid-column: 3/4;
+        grid-row: 1/2; }
+      .services .servicesWrap .servicesGridWrap .servicesGridWrap__div4 {
+        grid-column: 1/2;
+        grid-row: 2/3; }
+      .services .servicesWrap .servicesGridWrap .servicesGridWrap__div5 {
+        grid-column: 2/3;
+        grid-row: 2/3; }
+      .services .servicesWrap .servicesGridWrap .servicesGridWrap__div6 {
+        grid-column: 3/4;
+        grid-row: 2/3; }
+      .services .servicesWrap .servicesGridWrap .servicesGridWrap__div7 {
+        grid-column: 1/2;
+        grid-row: 3/4; } }
 
 /*# sourceMappingURL=services.css.map */

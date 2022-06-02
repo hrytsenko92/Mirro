@@ -4,8 +4,13 @@
   margin: 0 auto;
   z-index: 50; }
   .header .headerWrap {
-    max-width: 88%;
+    max-width: 87%;
     margin: 0 auto; }
+    .header .headerWrap .top-nav .menu .card-wrap .cart__href {
+      color: var(--just-white); }
+    .header .headerWrap .top-nav .menu li a:link,
+    .header .headerWrap .top-nav .menu li a:visited {
+      color: var(--basic-title-color); }
 
 .logo {
   width: 120px;
