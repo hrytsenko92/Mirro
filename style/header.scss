@@ -2,55 +2,52 @@
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
-  border: 1px solid red;
+  z-index: 50;
   .headerWrap {
-    max-width: 95%;//??????
+    max-width: 88%;
     margin: 0 auto;
   }
 }
 
 .logo {
-    width: 120px;
-    height: 40px;
-    background-image: url("../img/Logo_header.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+  width: 120px;
+  height: 40px;
+  background-image: url("../img/Logo_header.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .card-wrap {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-items: flex-end;
-    align-items: center;
-    padding: 9px;
-    border-radius: 4px;
-    gap: 4px;
-    background-color: var(--basic-title-color);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-items: flex-end;
+  align-items: center;
+  padding: 9px;
+  border-radius: 4px;
+  gap: 4px;
+  background-color: var(--basic-title-color);
 }
 .cart__href {
-    color: var(--just-white);
+  color: var(--just-white);
 }
 .cart__href_before {
-    content: "";
-    display: inline-block;
-    background-image: url('../img/basket.svg');
-    width: 17px;
-    height: 17px;
-    background-size: cover;
+  content: "";
+  display: inline-block;
+  background-image: url("../img/basket.svg");
+  width: 17px;
+  height: 17px;
+  background-size: cover;
 }
 .cart__count {
-    align-self: flex-end;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 1px;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background-color: var(--just-white);
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 1px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--just-white);
 }
-
-
-
 
 .top-nav {
   display: flex;
@@ -76,7 +73,7 @@
   overflow: hidden;
 }
 .menu > li > a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .menu-button-container {
@@ -121,7 +118,7 @@
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0);
+  background: var(--just-white);
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button::after {
@@ -136,7 +133,7 @@
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 82px;
+    margin-top: 72px;
     left: 0;
     flex-direction: column;
     width: 100%;
@@ -151,7 +148,7 @@
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   #menu-toggle:checked ~ .menu li {
-    border: 1px solid #333;
+    border: 1px solid var(--menu-li);
     height: 2.5em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -162,40 +159,48 @@
     margin: 0;
     padding: 0.5em 0;
     width: 100%;
-    background-color: var(--basic-background-color);// change to white
+    background-color: var(--just-white);
   }
   .menu > li:not(:last-child) {
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid var(--menu-li-not);
   }
-  .card-wrap {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 9px;
-    border-radius: 3px;
-    gap: 4px;
-    background-color: var(--basic-title-color);
-}
-.cart__href {
-    color: var(--basic-title-color);
-}
-.cart__href_before {
-    content: "";
-    display: inline-block;
-    background-image: url('../img/basket.svg');
-    width: 17px;
-    height: 17px;
-    background-size: cover;
-}
-.cart__count {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 1px;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background-color: var(--just-white);
-}
+  .header {
+    .headerWrap {
+      .top-nav {
+        .menu {
+          .card-wrap {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            padding: 9px;
+            border-radius: 3px;
+            gap: 4px;
+            background-color: var(--basic-title-color);
+          }
+          .cart__href {
+            color: var(--just-white);
+          }
+          .cart__href_before {
+            content: "";
+            display: inline-block;
+            background-image: url("../img/basket.svg");
+            width: 17px;
+            height: 17px;
+            background-size: cover;
+          }
+          .cart__count {
+            align-self: center;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding: 1px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: var(--just-white);
+          }
+        }
+      }
+    }
+  }
 }

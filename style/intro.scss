@@ -1,111 +1,114 @@
-//z index to photo
-
-@media (min-width: 320px)  {
-    .intro {
-        background-color: var(--basic-background-color);
-        position: relative;
-        // z-index: 10;
-        .intro__gradient_wrap {
-            max-width: 1440px;
-            margin: 0 auto;
-            position: relative;
-            overflow: hidden;
-            border: 1px solid red;
-            .gradient_1 {
-                position: absolute;
-                height: 31rem;
-                width: 35rem;
-                left: 70%;
-                top: -6.25rem;
-                background: radial-gradient(50% 50% at 50% 50%, rgba(58, 95, 86, 0.55) 0%, rgba(58, 95, 86, 0) 100%);
+@media (min-width: 320px) {
+  .intro {
+    position: relative;
+    z-index: 10;
+    .intro__gradient_wrap {
+      max-width: 1440px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      background-color: var(--basic-background-color);
+      .gradient_1 {
+        position: absolute;
+        height: 31rem;
+        width: 35rem;
+        left: 70%;
+        top: -6.25rem;
+        background: radial-gradient(
+          50% 50% at 50% 50%,
+          rgba(58, 95, 86, 0.55) 0%,
+          rgba(58, 95, 86, 0) 100%
+        );
+      }
+      .gradient_2 {
+        position: absolute;
+        width: 45.2rem;
+        height: 50.8rem;
+        top: 37.5rem;
+        right: 65%;
+        background: radial-gradient(
+          50% 50% at 50% 50%,
+          rgba(184, 125, 88, 0.8) 0%,
+          rgba(184, 125, 88, 0) 100%
+        );
+      }
+      .introWrap {
+        max-width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-around;
+        .introLeft {
+          padding: 1rem;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
+          align-content: space-around;
+          .introLeft__h1 {
+            align-self: center;
+            color: var(--basic-title-color);
+            font-family: "Source Serif Pro", serif;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-size: 32px;
+          }
+          .introLeft__p {
+            color: var(--text-color);
+          }
+          .introLeft__a {
+            margin-top: 5px;
+            cursor: pointer;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            width: 118px;
+            height: 44px;
+            border-radius: 6px;
+            background-color: var(--basic-title-color);
+            a:link,
+            a:active,
+            a:focus,
+            a:visited {
+              text-decoration: none;
+              color: var(--just-white);
             }
-            .gradient_2 {
-                position: absolute;
-                width: 45.2rem;
-                height: 50.8rem;
-                top: 37.5rem;
-                right: 65%;
-                background: radial-gradient(50% 50% at 50% 50%, rgba(184, 125, 88, 0.8) 0%, rgba(184, 125, 88, 0) 100%);
-            }
-            .introWrap {
-                max-width: 90%;
-                margin: 0 auto;
-                display: flex;
-                flex-flow: column nowrap;
-                justify-items: center;
-                align-items: center;
-                justify-content: space-around;
-                .introLeft {
-                    padding: 1rem;
-                    display: flex;
-                    flex-flow: column nowrap;
-                    justify-content: center;
-                    align-items: center;
-                    align-content: space-around;
-                    .introLeft__h1 {
-                        align-self: center;
-                        color: var(--basic-title-color);
-                        font-family: 'Source Serif Pro', serif;
-                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                        font-size: 32px;
-                    }
-                    .introLeft__p {
-                        color: #292C32;
-                    }
-                    .introLeft__a {
-                        margin-top: 5px;
-                        cursor: pointer;
-                        display: flex;
-                        flex-flow: row nowrap;
-                        justify-content: center;
-                        align-items: center;
-                        width: 118px;
-                        height: 44px;
-                        border-radius: 6px;
-                        background-color: var(--basic-title-color);
-                        a:link, a:active, a:focus, a:visited {
-                            text-decoration: none;
-                            color: var(--just-white);
-                        }
-                        a:hover {
-                            // text-decoration: underline;
-                        }
-                    }
-                }
-                .introRight {
-                    padding: 15px;
-                    .introRight_img {
-                        width: 100%;
-                        height: auto;
-                        object-position: left top;
-                        object-fit: cover;
-                    }
-                }
-            }
-        }  
-       
+          }
+        }
+        .introRight {
+          padding: 15px;
+          .introRight_img {
+            width: 100%;
+            height: auto;
+            object-position: left top;
+            object-fit: cover;
+          }
+        }
+      }
     }
+  }
 }
 
 @media (min-width: 768px) {
-    .intro {
-        .intro__gradient_wrap {
-            .introWrap {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr;
-                justify-content: space-around;
-                align-content: center;
-                .introLeft {
-                    grid-column: 1/2;
-                    grid-row: 1/2;
-                }
-                .introRight {
-                    grid-column: 2/3;
-                    grid-row: 1/2;
-                }
-            }
+  .intro {
+    .intro__gradient_wrap {
+      .introWrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-content: space-around;
+        align-content: center;
+        .introLeft {
+          grid-column: 1/2;
+          grid-row: 1/2;
         }
+        .introRight {
+          grid-column: 2/3;
+          grid-row: 1/2;
+        }
+      }
     }
-  
+  }
 }
