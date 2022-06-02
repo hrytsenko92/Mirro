@@ -80,8 +80,11 @@
         .services .servicesWrap .servicesGridWrap .p_cell_p {
           font-family: "Roboto", sans-serif;
           font-size: 14px; }
-        .services .servicesWrap .servicesGridWrap .s_cell_btn .s_cell_btn_a {
-          text-decoration: none; }
+        .services .servicesWrap .servicesGridWrap .s_cell_btn .s_cell_btn_a,
+        .services .servicesWrap .servicesGridWrap .s_cell_btn .s_cell_btn_a:link,
+        .services .servicesWrap .servicesGridWrap .s_cell_btn .s_cell_btn_a:visited {
+          text-decoration: none;
+          color: var(--basic-title-color); }
         .services .servicesWrap .servicesGridWrap .s_cell_btn .s_cell_btn_a::after {
           content: "";
           display: inline-block;

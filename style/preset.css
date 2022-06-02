@@ -105,8 +105,11 @@
         .preset .preset-gradient_wrap .presetWrap .presetLinkWrap .presetLinkWrap_span {
           width: 7.3rem;
           height: 1.5rem; }
-        .preset .preset-gradient_wrap .presetWrap .presetLinkWrap .preset__btn {
-          line-height: 1.5rem; }
+        .preset .preset-gradient_wrap .presetWrap .presetLinkWrap .preset__btn,
+        .preset .preset-gradient_wrap .presetWrap .presetLinkWrap .preset__btn:link,
+        .preset .preset-gradient_wrap .presetWrap .presetLinkWrap .preset__btn:visited {
+          line-height: 1.5rem;
+          color: var(--basic-title-color); }
         .preset .preset-gradient_wrap .presetWrap .presetLinkWrap .preset__btn::after {
           content: "";
           display: inline-block;

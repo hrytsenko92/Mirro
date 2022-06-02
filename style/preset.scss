@@ -128,8 +128,11 @@
             width: 7.3rem;
             height: 1.5rem;
           }
-          .preset__btn {
+          .preset__btn,
+          .preset__btn:link,
+          .preset__btn:visited {
             line-height: 1.5rem;
+            color: var(--basic-title-color);
           }
           .preset__btn::after {
             content: "";
